@@ -1,0 +1,346 @@
+body {
+    font-family: "Lato", sans-serif;
+    color: #2B2B2B;
+}
+
+.promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /*Пока что есть ошибка в том, что у всего блока есть отступ снизу, из-за чего следующий блок не получается поднять выше (из-за этого оставшаяся часть макета ниже орининала). Найду способ это испрвавить.*/
+}
+
+.promo__content {
+    padding-bottom: 105px;
+}
+
+.promo__title {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: -0.6px;
+    line-height: 1.05;
+    padding-bottom: 22px;
+}
+
+.promo__description {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+    line-height: 1.4;
+    width: 241px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.promo__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 20px;
+    background-color: #27AE60;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;
+    position: relative;
+}
+
+.promo__button::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 30px; 
+    border: 1px solid #1982BD;
+    opacity: 0.11;
+}
+
+.promo__image-button {
+    margin-left: 35px;
+    padding: 16px 12px 15px 12px;
+    background-color: #35B86C;
+    border-radius: 50%;
+}
+
+.promo__slider {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.promo__list {
+    display: flex;
+    justify-content: center;
+}
+
+.promo__item {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: -0.6px;
+}
+
+.promo__item:not(:first-child) {
+    display: none;
+}
+
+.promo__item {
+    text-align: center;
+}
+
+.promo__image {
+    display: none; /*Пока что скрыл изображения, я думаю, что через JS можно будет настроить слайдер так, чтобы изображения при переключении появлялись и исчезали.*/
+}
+
+.promo__image--active {
+    display: block;
+    width: 100%;
+    aspect-ratio: 449 / 724;
+    object-fit: cover;
+    object-position: 63%; /*У первого изображения есть проблема в том, что оно изначально очень широкое, я попробовал решить эту проблему через обрезание*/
+}
+
+.promo__slider-button {
+    position: absolute;
+    top: 41.1%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 45px; 
+    height: 45px;
+}
+
+.promo__slider-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.promo__slider-button_direction_left {
+    left: 8px;
+}
+
+.promo__slider-button_direction_right {
+    right: 8px;
+}
+
+.advantages {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: #27AE60;
+    padding-top: 58px;
+    padding-bottom: 315px;
+    position: relative;
+}
+
+.advantages__person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 463px;
+}
+
+.advantages__image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 313 / 291;
+    object-fit: cover;
+}
+
+.advantages__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 17px 18px;
+    border-radius: 40px;
+    position: relative;
+}
+
+.advantages__text::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    border-radius: 40px; 
+    border: 1px dashed #27AE60;
+    opacity: 0.31;
+}
+
+.advantages__text-name {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: -0.1px;
+    line-height: 1.5
+}
+
+.advantages__text-description {
+    font-size: 14px;
+    font-weight: normal;
+    color: #6C997F;
+}
+
+.advantages__points {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages__title {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.05;
+    width: 240px;
+    color: #FFFFFF;
+    padding-bottom: 43px;
+}
+
+.advantages__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 20px; /*В макете у элементов списка разные отступы, решил взять что-то среднее*/
+}
+
+.advantages__item {
+    font-size: 20px;
+    font-weight: normal;
+    color: #FFFFFF;
+    margin-left: 18px;
+    line-height: 1.5;
+    position: relative; 
+    padding-left: 40px;
+}
+
+.advantages__item::before {
+    content: "";
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 11px; 
+    height: 8px; 
+    background-image: url('../images/adventages-dot.svg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 147px;
+    position: relative;
+}
+
+.products__title {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.6px;
+    text-align: center;
+    line-height: 1.1;
+    color: #27AE60;
+    width: 280px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.products__slider-button {
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    background: transparent; 
+    border: none; 
+    cursor: pointer;
+    width: 45px; 
+    height: 45px;
+}
+
+.products__slider-button {
+    position: absolute;
+    top: 67%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 11.5px; 
+    height: 29px;
+}
+
+.products__slider-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.products__slider-button_direction_left {
+    left: 0; 
+}
+
+.products__slider-button_direction_right {
+    right: 40px; 
+}
+
+.products__slider-button img {
+    width: 40px; 
+}
+
+.products__item {
+    display: none;
+}
+
+.products__item--active {
+    display: block;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    height: 453px;
+    border-radius: 10px; 
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product:nth-child(1),
+.product:nth-child(3) {
+    display: none; /*Временное решение*/
+}
+
+.product__image {
+    display: block;
+    width: 100%; 
+    height: 58%; 
+    object-fit: cover; 
+    padding-bottom: 17px;
+}
+
+.product__title {
+    font-size: 16;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.product__description {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.5;
+    color: #6C997F;
+    width: 206px;
+    margin: 0 auto;
+}

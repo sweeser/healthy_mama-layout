@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 13px;
+    padding-top: 31px;
+    padding-bottom: 48px;
+}
+
+.header__title {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -0.6px;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-top: 4px;
+    margin-left: 127px;
+}
+
+.menu-toggle__bar {
+    width: 38px;
+    height: 6px;
+    background-color: #27AE60; 
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.navigation__list {
+    display: none;
+}
+
+.navigation__item {
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 7px;
+}
+
+.promo__description {
+    width: 231px;
+}
