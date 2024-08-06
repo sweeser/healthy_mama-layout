@@ -4,9 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/header-styles.css">
+    <link rel="stylesheet" href="./styles/main-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    
+    <header class="header">
+        <h1 class="header__title">Здоровая мама</h1>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a class="navigation__item-link navigation__item-link--active" href="">Важность правильного питания</a></li>
+                <li class="navigation__item"><a class="navigation__item-link" href="#">Почему мы?</a></li>
+                <li class="navigation__item"><a class="navigation__item-link" href="#">Где заказать?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="promo">
+            <div class="promo__content">
+                <h2 class="promo__title">Доставка здорового питания для мам </h2>
+                <p class="promo__description">Правильный и вкусный рацион для Вас и вашего ребенка</p>
+                <a class="promo__button" href="#">Оформить заказ</a>
+                <img class="promo__image-button" src="./images/form-arrow.svg" alt="">
+            </div>
+            <div class="promo__slider">
+                <ul class="promo__list">
+                    <li class="promo__item promo__item--active">Для беременных</li>
+                    <li class="promo__item">Для кормящих</li>
+                    <li class="promo__item">Безопасные лакомства</li>
+                </ul>
+                <img class="promo__image promo__image--active" src="./images/slider-image-1.png" alt="">
+                <img class="promo__image" src="./images/slider-image-2.png" alt="">
+                <img class="promo__image" src="./images/slider-image-3.png" alt="">
+                <button class="products__slider-button products__slider-button_direction_left" aria-label="Слайд влево"><img src="./images/slider-button-left-promo.svg" alt=""></button>
+                <button class="products__slider-button products__slider-button_direction_right" aria-label="Слайд вправо"><img src="./images/slider-button-right-promo.svg" alt=""></button>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="advantages__person">
+                <img class="advantages__image" src="./images/advantages-image.png" alt="Фотография Ивановой Надежды Александровны, сертифицированного диетолога">
+                <p class="advantages__name">Иванова Надежда Александровна</p>
+                <p class="advantages__description">Сертифицированный диетолог</p>
+            </div>
+            <div class="advantages__points">
+                <h2 class="advantages__title">Почему Вам нужно правильно питаться?</h2>
+                <ul class="advantages__list">
+                    <li class="advantages__item">Здоровый ребенок</li>
+                    <li class="advantages__item">Повышение иммунитета</li>
+                    <li class="advantages__item">Поддержание фигуры</li>
+                    <li class="advantages__item">Отстутствие вредных компонентов </li>
+                    <li class="advantages__item">Снижение нагрузки на органыпищеварения</li>
+                </ul>
+            </div>
+        </section>
+        <section class="products">
+            <h2 class="products__title">Обязательные продукты для здорового питания:</h2>
+            <div class="products__slider">
+                <button class="products__slider-button products__slider-button_direction_left" aria-label="Слайд влево"><img src="./images/slider-button-left-products.svg" alt=""></button>
+                <button class="products__slider-button products__slider-button_direction_right" aria-label="Слайд вправо"><img src="./images/slider-button-right-products.svg" alt=""></button>
+                <ul class="products__list">
+                    <li class="products__item product">
+                        <img class="product__image" src="./images/product-image-1.png" alt="Овощи: брокколи, капуста, огурцы, перец">
+                        <h3 class="product__title">Овощи</h3>
+                        <p class="product__description">Брокколи, тыква, цветная капуста, репка, огурцы. Готовые блюда из тушеных смесей без добавления масла</p>
+                    </li>
+                    <li class="products__item product">
+                        <img class="product__image" src="./images/product-image-2.png" alt="Мясо: крольчатина">
+                        <h3 class="product__title">Мясо</h3>
+                        <p class="product__description">Крольчатина, телятина, индейка, курица без кожи. Мясные блюда ежедневно должны присутствовать в питании в тушеном, запеченном или вареном виде.</p>
+                    </li>
+                    <li class="products__item product">
+                        <img class="product__image" src="./images/product-image-3.png" alt="Продукт из молока: сыр">
+                        <h3 class="product__title">Продукты из молока</h3>
+                        <p class="product__description">Сыр, ряженка, простокваша, творог, йогурт без добавок, кефир. Желательно кушать ихкормящей маме ежедневно либо через день.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="deliverys">
+            <div class="deliverys__picture">
+                <img class="deliverys__image" src="./images/deliverys-image.png" alt="Мама с ребенком на спине в разделе доставки">
+            </div>
+            <div class="deliverys__points">
+                <h2 class="deliverys__title">Почему мамы выбирают нашу доставку?</h2>
+                <ul class="deliverys__list">
+                    <li class="deliverys__item delivery">
+                        <img class="delivery__image" src="./images/delivery-image-1.svg" alt="">
+                        <h3 class="delivery__title">Экологичность:</h3>
+                        <p class="delivery__description">продукты выращиваются без применения химии</p>
+                    </li>
+                    <li class="deliverys__item delivery">
+                        <img class="delivery__image" src="./images/delivery-image-2.svg" alt="">
+                        <h3 class="delivery__title">Сбалансированность:</h3>
+                        <p class="delivery__description">наши блюда составляют ведущие диетологи по уникальной рецептуре</p>
+                    </li>
+                    <li class="deliverys__item delivery">
+                        <img class="delivery__image" src="./images/delivery-image-3.svg" alt="">
+                        <h3 class="delivery__title">Индивидуальность:</h3>
+                        <p class="delivery__description">продукты выращиваются без применения химии</p>
+                    </li>
+                    <li class="deliverys__item delivery">
+                        <img class="delivery__image" src="./images/delivery-image-4.svg" alt="">
+                        <h3 class="delivery__title">Польза:</h3>
+                        <p class="delivery__description">питаясь нашими продуктами, Вы можете быть уверены в своем здоровье и здоровье ребенка</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="gallery">
+            <h2 class="gallery__title">Наш Instagram</h2>
+            <p class="gallery__description">Подписывайтесь, чтобы быть в курсе последних новостей</p>
+            <img class="gallery__image" src="./images/gallery-image-1.png" alt="">
+            <img class="gallery__image" src="./images/gallery-image-2.png" alt="">
+            <img class="gallery__image" src="./images/gallery-image-5.png" alt="">
+            <img class="gallery__image" src="./images/gallery-image-7.png" alt="">
+            <img class="gallery__image" src="./images/gallery-image-8.png" alt="">
+            <img class="gallery__image" src="./images/gallery-image-9.png" alt="">
+        </section>
+        <section class="menu">
+            <h2 class="menu__title">Хотите получить персональное меню?</h2>
+            <p class="menu__description">Оставьте заявку и наш оператор свяжется с Вами для уточнения деталей</p>
+            <form class="menu__form">
+                <input type="text" class="menu__input" placeholder="Ваше имя" name="name" required>
+                <input type="tel" class="menu__input" placeholder="Ваш телефон" name="phone" required>
+                <button type="submit" class="menu__button">Оформить заказ<img class="menu__image" src="./images/form-arrow.svg" alt=""></button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="footer__title">Здоровая мама</h2>
+        <ul class="footer__navigation-list">
+            <li class="footer__navigation-item"><a class="footer__navigation-link" href="#">Важность правильного питания</a></li>
+            <li class="footer__navigation-item"><a class="footer__navigation-link" href="#">Почему мы?</a></li>
+            <li class="footer__navigation-item"><a class="footer__navigation-link" href="#">Где заказать?</a></li>
+        </ul>
+        <ul class="footer__policy-list">
+            <li class="footer__policy-item"><a class="footer__policy-link" href="#">Политика конфиденциальности</a></li>
+            <li class="footer__policy-item"><a class="footer__policy-link" href="#">Условия онлайн-использования</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
