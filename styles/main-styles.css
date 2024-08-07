@@ -244,6 +244,7 @@ body {
     align-items: center;
     padding-top: 147px;
     position: relative;
+    padding-bottom: 62px;
 }
 
 .products__title {
@@ -271,7 +272,7 @@ body {
 
 .products__slider-button {
     position: absolute;
-    top: 67%;
+    top: 61.5%;
     background: none;
     border: none;
     cursor: pointer;
@@ -343,4 +344,299 @@ body {
     color: #6C997F;
     width: 206px;
     margin: 0 auto;
+}
+
+.deliverys {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 88px;
+}
+
+.deliverys__image {
+    display: block;
+    width: 212%;
+    aspect-ratio: 1349 / 1158;
+    object-fit: contain;
+    margin-left: -175px;
+}
+
+.deliverys__points {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.deliverys__title {
+    font-size: 22px;
+    font-weight: bold;
+    width: 274px;
+    margin-top: -130px; /*Это скорее всего не очень правильно, но я пока не совсем понимаю как обрезать изображение снизу, из-за него сдвиг происходит*/
+    color: #27AE60;
+    padding-bottom: 45px;
+    /* word-break: break-word;
+    hyphens: auto; */ /*Пробовал эти варианты для переноса строки как в примере, остатеся вариант через span сделать, но мне кажется, что это неправильно*/
+}
+
+.deliverys__item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 30px;
+    margin-left: -35px;
+}
+
+.delivery__image {
+    height: 75px;
+    margin-top: -20px;
+}
+
+.delivery__content {
+    display: flex;
+    flex-direction: column;
+    margin-left: -10px;
+}
+
+.delivery__title {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 6px;
+    color: #000000;
+}
+
+.delivery__description {
+    font-size: 14px;
+    font-weight: normal;
+    color: #000000;
+    line-height: 1.1;
+    width: 230px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 420px;
+}
+
+.gallery__title {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: #27AE60;
+    padding-bottom: 19px;
+}
+
+.gallery__description {
+    font-size: 14px;
+    font-weight: normal;
+    width: 285px;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 42px;
+}
+
+.gallery__description-type-underline {
+    text-decoration: underline;
+    text-decoration-color: #000000; 
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+}
+
+.gallery__image {
+    display: block;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.gallery__image-number-1 {
+    width: 48%;
+    aspect-ratio: 1486 / 1263;
+    top: 305px;
+    left: -39px;
+    z-index: 1;
+}
+
+.gallery__image-number-2 {
+    width: 65%;
+    aspect-ratio: 208 / 177;
+    top: 215px;
+    right: -120px;
+    z-index: 2;
+}
+
+.gallery__image-number-3 {
+    width: 64%;
+    aspect-ratio: 20 / 17;
+    top: 115px;
+    left: -105px;
+    z-index: 1;
+}
+
+.gallery__image-number-4 {
+    width: 42%;
+    aspect-ratio: 606 /515;
+    top: 323px;
+    right: -5px;
+    z-index: 3;
+}
+
+.gallery__image-number-5 {
+    width: 54%;
+    aspect-ratio: 1486 / 1263;
+    top: 128px;
+    left: 118px;
+    z-index: 1;
+}
+
+.gallery__image-number-6 {
+    width: 40%;
+    aspect-ratio: 173 / 147;
+    top: 235px;
+    left: 38px;
+    z-index: 2;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 85px;
+}
+
+.menu__title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #27AE60;
+    text-align: center;
+    width: 237px;
+    line-height: 1.2;
+    padding-bottom: 17px;
+}
+
+.menu__description {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    width: 301px;
+    line-height: 1.1;
+    padding-bottom: 38px;
+}
+
+.menu__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__input {
+    width: 279px;
+    height: 41px;
+    border-radius: 30px;
+    border: none;
+    background-color: #E8F7EE;
+    color: #b1dac2;
+    margin-bottom: 10px;
+}
+
+.menu__input::placeholder {
+    padding-left: 32px; 
+}
+
+.menu__button {
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 20px;
+    background-color: #27AE60;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: none;
+    position: relative;
+}
+
+.menu__button::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 30px; 
+    border: 1px solid #1982BD;
+    opacity: 0.11;
+}
+
+.menu__image {
+    margin-left: 35px;
+    padding: 16px 12px 15px 12px;
+    background-color: #35B86C;
+    border-radius: 50%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: #27AE60;
+    padding-top: 41px;
+    padding-left: 20px;
+}
+
+.footer__title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: -0.6px;
+    padding-bottom: 37px;
+}
+
+.footer__navigation-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.footer__navigation-item {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.footer__navigation-link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer__policy-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 23px;
+    padding-bottom: 50px;
+}
+
+.footer__policy-item {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.footer__policy-link {
+    text-decoration: none;
+    color: #FFFFFF;
+    opacity: 0.4;
 }
