@@ -238,20 +238,13 @@ body {
     content: "";
     position: absolute;
     left: 11px;
-    top: 35%;
+    top: 10px;
     width: 13px; 
     height: 10px; 
     background-image: url('../images/adventages-dot.svg'); 
     background-size: cover; 
     background-repeat: no-repeat; 
 }
-
-.advantages__item:nth-child(4),
-.advantages__item:nth-child(5) {
-    padding-top: 5px;
-    line-height: 1.4;
-}
-
 .advantages__item:nth-child(4):before,
 .advantages__item:nth-child(5):before {
     content: "";
@@ -289,7 +282,7 @@ body {
 
 .products__slider-button {
     position: absolute;
-    top: 59.6%;
+    top: 450px;
     background: none;
     border: none;
     cursor: pointer;
@@ -607,7 +600,7 @@ body {
 
 .menu__image {
     position: absolute;
-    top: 10%;
+    top: 5px;
     right: 6px;
     padding: 16px 12px 15px 12px;
     background-color: #35B86C;
